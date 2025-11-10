@@ -34,18 +34,27 @@ Cross Product: 0.6331 seconds
 Scalar Multiplication: 0.5431 seconds
 Normalization: 0.6557 seconds
 Angle: 2.2121 seconds
+
+$ make rust/target/release/vector_perf
+Technology: Rust
+Addition: 0.0000000970 seconds
+Subtraction: 0.0000000440 seconds
+Cross Product: 0.0000000430 seconds
+Scalar Multiplication: 0.0000000440 seconds
+Normalization: 0.0000000450 seconds
+Angle: 0.0000050340 seconds
 ```
 
 TODO list:
 - [X] Vector3D operations in ANSI C
 - [X] Vector3D operations in Pascal/FPC
+- [x] Vector3D operations in RUST
 - [ ] Vector3D operations in C++ 11
 - [ ] Vector3D operations in Python
 - [ ] Vector3D operations in CPython
 - [ ] Vector3D operations in Ada
 - [ ] Vector3D operations in Haskell
 - [ ] Vector3D operations in Java
-- [ ] Vector3D operations in RUST
 - [ ] Vector3D operations in TypeScript
 - [ ] Vector3D operations in Go
 - [ ] Vector3D operations in Zig
