@@ -18,7 +18,7 @@ make all
 ## Example outputs from vector3 opeartions perf. tests (running the same machine)
 ```bash
 $ make pas/TestVectorsPerf
-Technology: Pascal
+Technology: Pascal/FPC
 Addition: 0.4600 seconds
 Subtraction: 0.4520 seconds
 Cross Product: 0.5200 seconds
