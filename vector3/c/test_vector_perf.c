@@ -54,6 +54,7 @@ int main() {
     v1 = vector(rand_double(), rand_double(), rand_double());
     v2 = vector(rand_double(), rand_double(), rand_double());
 
+    printf("Technology: ANSI C99\n");
     benchmark("Addition", test_add);
     benchmark("Subtraction", test_sub);
     benchmark("Cross Product", test_cross);
