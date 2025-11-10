@@ -69,7 +69,7 @@ begin
   V1 := Vector(Random, Random, Random);
   V2 := Vector(Random, Random, Random);
 
-  WriteLn('Technology: Pascal');
+  WriteLn('Technology: Pascal/FPC');
   Benchmark('Addition', @TestAdd);
   Benchmark('Subtraction', @TestSub);
   Benchmark('Cross Product', @TestCross);
