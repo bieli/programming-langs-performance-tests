@@ -69,6 +69,7 @@ begin
   V1 := Vector(Random, Random, Random);
   V2 := Vector(Random, Random, Random);
 
+  WriteLn('---');
   WriteLn('Technology: Pascal/FPC');
   Benchmark('Addition', @TestAdd);
   Benchmark('Subtraction', @TestSub);
@@ -76,5 +77,6 @@ begin
   Benchmark('Scalar Multiplication', @TestScalar);
   Benchmark('Normalization', @TestNorm);
   Benchmark('Angle', @TestAngle);
+  WriteLn('===');
 end.
 

@@ -54,6 +54,7 @@ int main() {
     v1 = vector(rand_double(), rand_double(), rand_double());
     v2 = vector(rand_double(), rand_double(), rand_double());
 
+    printf("---\n");
     printf("Technology: ANSI C99\n");
     benchmark("Addition", test_add);
     benchmark("Subtraction", test_sub);
@@ -61,6 +62,7 @@ int main() {
     benchmark("Scalar Multiplication", test_scale);
     benchmark("Normalization", test_norm);
     benchmark("Angle", test_angle);
+    printf("===\n");
 
     return 0;
 }

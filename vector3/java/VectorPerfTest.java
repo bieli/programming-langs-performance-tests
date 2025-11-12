@@ -13,6 +13,7 @@ public class VectorPerfTest {
         Vector v1 = new Vector(1.0, 2.0, 3.0);
         Vector v2 = new Vector(4.0, 5.0, 6.0);
 
+        System.out.printf("---%n");
         System.out.printf("Technology: Java%n");
         benchmark("Addition", () -> {
             Vector result;
@@ -48,6 +49,7 @@ public class VectorPerfTest {
             for (int i = 0; i < ITERATIONS; i++)
                 v1.angle(v2);
         });
+        System.out.printf("===%n");
     }
 }
 

@@ -15,6 +15,7 @@ fn main() {
     let v1 = Vector::new(1.0, 2.0, 3.0);
     let v2 = Vector::new(4.0, 5.0, 6.0);
 
+    println!("---");
     println!("Technology: Rust");
     benchmark("Addition", || {
         let mut _result;
@@ -56,5 +57,6 @@ fn main() {
             let _ = v1.angle(v2);
         }
     });
+    println!("===");
 }
 
