@@ -11,7 +11,7 @@ rust/target/release/vector_perf:
 
 java/VectorPerfTest: java/VectorPerfTest
 	javac java/Vector.java java/VectorPerfTest.java
-	java -cp java VectorPerfTest
+	java -Duser.language=en -Duser.region=US -cp java VectorPerfTest
 
 run: all
 	./c/test_vector_perf

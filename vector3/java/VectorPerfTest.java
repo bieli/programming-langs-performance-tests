@@ -6,7 +6,7 @@ public class VectorPerfTest {
         task.run();
         long end = System.nanoTime();
         double duration = (end - start) / 1e9;
-        System.out.printf("%-22s %.6f seconds%n", label, duration);
+        System.out.printf("%s: %.6f seconds%n", label, duration);
     }
 
     public static void main(String[] args) {
