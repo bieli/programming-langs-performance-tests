@@ -58,7 +58,7 @@ TODO list:
 - [X] Vector3D operations in ANSI C
 - [X] Vector3D operations in Pascal/FPC
 - [x] Vector3D operations in RUST
-- [ ] Vector3D operations in Java
+- [X] Vector3D operations in Java
 - [ ] Vector3D operations in C++ 11
 - [ ] Vector3D operations in Python
 - [ ] Vector3D operations in CPython
