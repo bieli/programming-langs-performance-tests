@@ -15,5 +15,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Add packages
       run: sudo apt-get install gcc g++ fpc
-    - name: make
-      run: make all
+    - name: make all vector3
+      run: cd vector3 && make all
