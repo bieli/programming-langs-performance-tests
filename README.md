@@ -43,6 +43,15 @@ Cross Product: 0.0000000430 seconds
 Scalar Multiplication: 0.0000000440 seconds
 Normalization: 0.0000000450 seconds
 Angle: 0.0000050340 seconds
+
+$ make java/VectorPerfTest 
+Technology: Java
+Addition               0,006231 seconds
+Subtraction            0,005769 seconds
+Cross Product          0,005679 seconds
+Scalar Multiplication  0,009417 seconds
+Normalization          0,004488 seconds
+Angle                  1,943496 seconds
 ```
 
 TODO list:
