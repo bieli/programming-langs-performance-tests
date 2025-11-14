@@ -35,6 +35,16 @@ Scalar Multiplication: 0.5431 seconds
 Normalization: 0.6557 seconds
 Angle: 2.2121 seconds
 
+
+$ make cpp/vector_perf
+Technology: CPP
+Addition: 0.50293 seconds
+Subtraction: 0.507009 seconds
+Cross Product: 0.550719 seconds
+Scalar Multiplication: 0.53738 seconds
+Normalization: 0.626334 seconds
+Angle: 2.01002 seconds
+
 $ make rust/target/release/vector_perf
 Technology: Rust
 Addition: 0.0000000970 seconds
@@ -53,7 +63,7 @@ Scalar Multiplication: 0.006037 seconds
 Normalization: 0.003731 seconds
 Angle: 1.926428 seconds
 
-$ make py/test_vectors_perf 
+$ make py/test_vectors_perf
 python3 py/test_vectors_perf.py
 Technology: Python
 Addition: 45.5106 seconds
@@ -66,11 +76,11 @@ Angle: 184.7451 seconds
 
 TODO list:
 - [X] Vector3D operations in ANSI C
+- [X] Vector3D operations in C++ 11
 - [X] Vector3D operations in Pascal/FPC
 - [x] Vector3D operations in RUST
 - [X] Vector3D operations in Java
 - [X] Vector3D operations in Python
-- [ ] Vector3D operations in C++ 11
 - [ ] Vector3D operations in CPython
 - [ ] Vector3D operations in Ada
 - [ ] Vector3D operations in Haskell
