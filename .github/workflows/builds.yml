@@ -17,3 +17,5 @@ jobs:
       run: sudo apt-get install gcc g++ fpc
     - name: make all vector3
       run: cd vector3 && make all
+    - name: make all vector2
+      run: cd vector2 && make all
