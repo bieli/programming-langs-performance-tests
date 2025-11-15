@@ -2,7 +2,7 @@
 Most popular programming languages tests for various operations
 
 ## Motivation
-One learning plaform to remember some older programming lenguages and teach modern, too.
+One learning plaform to remember some older programming languages and teach modern, too.
 
 Outputs: interesting facts/numbers about real programming languages performance to compare with TIOBE index programming languages popularity.
 
