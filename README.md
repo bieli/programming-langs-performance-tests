@@ -64,7 +64,6 @@ Normalization: 0.003731 seconds
 Angle: 1.926428 seconds
 
 $ make py/test_vectors_perf
-python3 py/test_vectors_perf.py
 Technology: Python
 Addition: 45.5106 seconds
 Subtraction: 46.0557 seconds
@@ -72,6 +71,15 @@ Cross Product: 65.9770 seconds
 Scalar Multiplication: 58.0498 seconds
 Normalization: 83.8463 seconds
 Angle: 184.7451 seconds
+
+$ make go/main
+Technology: Go
+Addition: 0.132510 seconds
+Subtraction: 0.059451 seconds
+Cross Product: 0.029388 seconds
+Scalar Multiplication: 0.025097 seconds
+Normalization: 0.028984 seconds
+Angle: 1.879684 seconds
 ```
 
 TODO list:
@@ -81,11 +89,11 @@ TODO list:
 - [x] Vector3D operations in RUST
 - [X] Vector3D operations in Java
 - [X] Vector3D operations in Python
+- [X] Vector3D operations in Go
 - [ ] Vector3D operations in CPython
 - [ ] Vector3D operations in Ada
 - [ ] Vector3D operations in Haskell
 - [ ] Vector3D operations in TypeScript
-- [ ] Vector3D operations in Go
 - [ ] Vector3D operations in Zig
 - [ ] espose performance results on github pages as interactive graphs from CI Github Actions runs
 - [ ] add OSs versions matrix to CI and expose differences on github pages graph

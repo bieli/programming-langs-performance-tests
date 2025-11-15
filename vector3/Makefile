@@ -1,10 +1,10 @@
-all: c/test_vector_perf cpp/vector_perf pas/TestVectorsPerf rust/target/release/vector_perf java/VectorPerfTest py/test_vectors_perf
+all: c/test_vector_perf cpp/vector_perf pas/TestVectorsPerf rust/target/release/vector_perf java/VectorPerfTest py/test_vectors_perf go/main
 
 c/test_vector_perf: c/vector.c c/test_vector_perf.c
 	cd c && gcc -std=c99 -O2 vector.c test_vector_perf.c -o test_vector_perf -lm && time ./test_vector_perf
 
 cpp/vector_perf: cpp/vector.cpp cpp/main.cpp
-	cd cpp && g++ -std=c++11 -O2 main.cpp vector.cpp -o vector_perf && ./vector_perf
+	cd cpp && g++ -std=c++11 -O2 main.cpp vector.cpp -o vector_perf && time ./vector_perf
 
 pas/TestVectorsPerf: pas/TestVectorsPerf.pas
 	cd pas && fpc TestVectorsPerf.pas && time ./TestVectorsPerf
@@ -19,6 +19,9 @@ java/VectorPerfTest: java/VectorPerfTest
 py/test_vectors_perf:
 	time python3 py/test_vectors_perf.py
 
+go/main:
+	cd go && go build main.go && time ./main
+
 clean:
 	rm -f c/*.o c/test_vector_perf
 	rm -f cpp/*.o cpp/vector_perf
@@ -27,3 +30,5 @@ clean:
 	rm -f java/*.class
 	find . -name "*.pyc" -delete
 	rm -rf py/__pycache__/
+	rm -f go/main
+
