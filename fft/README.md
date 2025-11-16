@@ -3,7 +3,7 @@
 
 ## Bargraph with results
 
-![](../assets/fft__comparision_by_programming_language_1.png)
+![](../assets/ftt__comparision_by_programming_language_1.png)
 
 
 ## Run log with results
