@@ -18,7 +18,7 @@ int main() {
         elapsed = (double)(end - start) / CLOCKS_PER_SEC; \
         printf("%s: %.8f seconds\n", label, elapsed);
 
-    printf("Technology: ANSI C11\n");
+    printf("Technology: ANSI C99\n");
     BENCHMARK("Addition", add(v1, v2));
     BENCHMARK("Subtraction", subtract(v1, v2));
     BENCHMARK("Scaling", scale(v1, 2.5));

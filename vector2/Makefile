@@ -1,7 +1,7 @@
 all: c/vector2d_perf pas/TestVector2DPerf
 
 c/vector2d_perf: c/vector2d.c c/main.c
-	cd c && gcc -O2 main.c vector2d.c -o vector2d_perf -lm && time ./vector2d_perf
+	cd c && gcc -std=c99 -O2 main.c vector2d.c -o vector2d_perf -lm && time ./vector2d_perf
 
 pas/TestVector2DPerf:
 	cd pas && fpc TestVector2DPerf.pas && time ./TestVector2DPerf
