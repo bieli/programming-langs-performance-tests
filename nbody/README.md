@@ -107,6 +107,12 @@ real	0m6,396s
 user	0m6,384s
 sys	0m0,012s
 
+(.venv) $ cd cython/
+(.venv) $ python3 setup.py build_ext --inplace
+(.venv) $ python3 -c "import nbody_perf; nbody_perf.run_simulation()"
+Technology: Cython
+10000-bodies for 10 steps: 5.634083 seconds
+
 
 ```
 
