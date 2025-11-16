@@ -102,9 +102,9 @@ Angle: 7.84480880 seconds
 
 ## Bendchmarks results as bar graphs
 
-[vector3_comparision_for_all_langs_1](assets/vector3_comparision_for_all_langs_1.png)
+![vector3_comparision_for_all_langs_1](assets/vector3_comparision_for_all_langs_1.png)
 
-[vector3_comparision_for_all_langs__excluding_python_1](assets/vector3_comparision_for_all_langs__excluding_python_1.png)
+![vector3_comparision_for_all_langs__excluding_python_1](assets/vector3_comparision_for_all_langs__excluding_python_1.png)
 
 
 ## TODO list:
