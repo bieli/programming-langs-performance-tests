@@ -17,6 +17,21 @@ Normalization: 0.35481300 seconds
 Angle: 1.78305500 seconds
 
 
+$ cd cpp/
+$ g++ -O3 -std=c++17 main.cpp -o vector2d_bench
+$ time ./vector2d_bench 
+Technology: CPP
+Addition: 0.0000004 seconds
+Subtraction: 0.0000001 seconds
+Scaling: 0.0000001 seconds
+Normalization: 0.0000001 seconds
+Angle: 0.0000001 seconds
+
+real	0m0,007s
+user	0m0,003s
+sys	0m0,004s
+
+
 Technology: Pascal/FPC
 Addition: 0.311 seconds
 Subtraction: 0.294 seconds
