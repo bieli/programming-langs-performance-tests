@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Add packages
-      run: sudo apt-get install gcc g++ fpc
+      run: sudo apt-get install gcc g++ fpc dmd
     - name: make all vector3
       run: cd vector3 && make all
     - name: make all vector2

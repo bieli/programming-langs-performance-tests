@@ -1,4 +1,4 @@
-all: c/test_vector_perf cpp/vector_perf pas/TestVectorsPerf rust/target/release/vector_perf java/VectorPerfTest py/test_vectors_perf go/main
+all: c/test_vector_perf cpp/vector_perf pas/TestVectorsPerf rust/target/release/vector_perf java/VectorPerfTest py/test_vectors_perf go/main d/vector3d_perf cython
 
 c/test_vector_perf: c/vector.c c/test_vector_perf.c
 	cd c && gcc -std=c99 -O2 vector.c test_vector_perf.c -o test_vector_perf -lm && time ./test_vector_perf
@@ -22,6 +22,12 @@ py/test_vectors_perf:
 go/main:
 	cd go && go build main.go && time ./main
 
+d/vector3d_perf:
+	cd d/ && dmd main.d vector3d.d -O -release -inline -of=vector3d_perf && time ./vector3d_perf
+
+cython:
+	cd cython/ && python3 -m venv .venv && . .venv/bin/activate && pip3 install cython numpy setuptools && python setup.py build_ext --inplace && time python3 test_vector_perf.py
+
 clean:
 	rm -f c/*.o c/test_vector_perf
 	rm -f cpp/*.o cpp/vector_perf
@@ -31,4 +37,6 @@ clean:
 	find . -name "*.pyc" -delete
 	rm -rf py/__pycache__/
 	rm -f go/main
+	rm -rf cython/build/ cython/.venv/ cython/*.cpp cython/*.so
+	rm -rf d/vector3d_perf d/vector3d_perf.o
 
