@@ -9,7 +9,7 @@ DATA_LINE_SUFFIX = "seconds"
 
 CHART_X_LABEL = "Seconds"
 CHART_Y_LABEL = "Operation"
-CHART_TITLE = "Vector3 calculus comparision by programming language (lower is better)"
+CHART_TITLE = "_________ comparision by programming language (lower is better)"
 
 
 def parse_data(inp_data: list):
