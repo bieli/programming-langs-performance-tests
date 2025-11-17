@@ -80,5 +80,20 @@ Cross Product: 0.93123390 seconds
 Scalar Multiplication: 0.80616550 seconds
 Normalization: 1.29011100 seconds
 Angle: 7.84480880 seconds
+
+$ cd lisp/
+$ sudo apt install sbcl
+$ time sbcl --script main.lisp
+Technology: Common Lisp (SBCL)
+Addition: 3.41600000 seconds
+Subtraction: 3.46500000 seconds
+Scaling: 3.29200000 seconds
+Normalization: 7.88500000 seconds
+Angle: 14.10300000 seconds
+
+real	0m32,243s
+user	0m32,150s
+sys	0m0,088s
+
 ```
 
