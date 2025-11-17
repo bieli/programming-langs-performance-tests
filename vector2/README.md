@@ -57,4 +57,16 @@ user	0m7,514s
 sys	0m0,004s
 
 
+$ cd lisp/
+$ sudo apt install sbcl
+$ sbcl --script main.lisp
+Technology: Common Lisp (SBCL)
+Addition: 2.56500000 seconds
+Subtraction: 2.43400000 seconds
+Scaling: 2.36000000 seconds
+Normalization: 5.65600000 seconds
+Angle: 10.70500000 seconds
+
+
+
 ```
